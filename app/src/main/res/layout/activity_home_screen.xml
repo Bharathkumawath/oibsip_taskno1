@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#06283D"
+    tools:context=".HomeScreen">
+
+  <RelativeLayout
+      android:id="@+id/bar"
+      android:layout_width="match_parent"
+      android:layout_height="40dp"
+      android:layout_marginStart="10dp"
+      android:layout_marginLeft="10dp"
+      android:layout_marginTop="10dp"
+      android:layout_marginEnd="10dp"
+      android:layout_marginRight="10dp"
+      android:layout_marginBottom="10dp"
+      android:background="#DFF6FF">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:text="Unit Converter"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+
+        android:textStyle="bold"></TextView>
+  </RelativeLayout>
+<!--  <EditText-->
+<!--      android:id="@+id/editText"-->
+<!--      android:layout_width="match_parent"-->
+<!--      android:layout_height="40dp"-->
+<!--      android:layout_marginStart="10dp"-->
+<!--      android:textColor="@color/black"-->
+<!--      android:layout_marginLeft="10dp"-->
+<!--      android:layout_marginTop="10dp"-->
+<!--      android:layout_marginEnd="10dp"-->
+<!--      android:layout_marginRight="10dp"-->
+<!--      android:layout_marginBottom="10dp"-->
+<!--      android:textColorHint="@color/black"-->
+<!--      android:background="@drawable/searchback"-->
+<!--      android:drawableStart="@drawable/ic_baseline_search_24"-->
+<!--      android:drawableLeft="@drawable/ic_baseline_search_24"-->
+<!--      android:hint=" search.."-->
+<!--      android:paddingLeft="10dp" />-->
+
+  <androidx.recyclerview.widget.RecyclerView
+      android:id="@+id/recycleView"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_below="@+id/bar"
+      android:layout_marginStart="10dp"
+      android:layout_marginLeft="10dp"
+      android:layout_marginTop="10dp"
+      android:layout_marginEnd="10dp"
+      android:layout_marginRight="10dp"
+      android:layout_marginBottom="10dp"
+      android:background="@drawable/searchback" />
+</RelativeLayout>
